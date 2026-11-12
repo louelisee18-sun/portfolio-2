@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow | Application de Gestion de Tâches</title>
+    <!-- Polices Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Icônes FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barre de navigation simple pour lier vers ton Portfolio -->
+    <nav class="navbar">
+        <a href="URL_DE_TON_PORTFOLIO" class="back-link"><i class="fa-solid fa-arrow-left"></i> Retour au Portfolio</a>
+        <div class="logo">TaskFlow.js</div>
+    </nav>
+
+    <!-- Conteneur principal de l'application -->
+    <main class="app-container">
+        <div class="app-header">
+            <span class="badge-app">JavaScript App</span>
+            <h1>Ma Liste de Tâches</h1>
+            <p>Gérez vos objectifs quotidiens en temps réel. Données sauvegardées localement.</p>
+        </div>
+
+        <!-- Formulaire d'ajout -->
+        <div class="task-form">
+            <input type="text" id="taskInput" placeholder="Ajouter une nouvelle tâche..." autocomplete="off">
+            <button id="addBtn" onclick="addTask()">
+                <i class="fa-solid fa-plus"></i> Ajouter
+            </button>
+        </div>
+
+        <!-- Compteur de tâches -->
+        <div class="task-stats">
+            <span id="taskCount">0 tâche(s) en cours</span>
+        </div>
+
+        <!-- Liste des tâches -->
+        <ul id="taskList" class="task-list">
+            <!-- Les tâches s'ajouteront ici automatiquement en JavaScript -->
+        </ul>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="app-footer">
+        <p>© 2026 - Développé avec HTML5, CSS3 et JavaScript Vanille.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
